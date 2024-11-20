@@ -1,0 +1,56 @@
+Executing: program() stmt_list() stmt() 
+	Token: read consumed
+	Token: A1 consumed
+Executing: stmt_list() stmt() 
+	Token: read consumed
+	Token: A2 consumed
+Executing: stmt_list() stmt() 
+	Token: sum consumed
+	Token: := consumed
+Executing: expr() term() factor()
+	Token: ( consumed
+Executing: expr() term() factor()
+	Token: A1 consumed
+Executing: fact_Tail() term_tail() add_op() 
+	Token: - consumed
+Executing: term() factor()
+	Token: 33 consumed
+Executing: fact_Tail() term_tail() 
+	Token: ) consumed
+Executing: fact_Tail() term_tail() add_op() 
+	Token: + consumed
+Executing: term() factor()
+	Token: A2 consumed
+Executing: fact_Tail() mult_op() 
+	Token: * consumed
+Executing: factor()
+	Token: 5.5 consumed
+Executing: fact_Tail() term_tail() stmt_list() stmt() 
+	Token: write consumed
+Executing: expr() term() factor()
+	Token: sum consumed
+Executing: fact_Tail() term_tail() stmt_list() stmt() 
+	Token: write consumed
+Executing: expr() term() factor()
+	Token: ( consumed
+Executing: expr() term() factor()
+	Token: A1 consumed
+Executing: fact_Tail() term_tail() add_op() 
+	Token: + consumed
+Executing: term() factor()
+	Token: A2 consumed
+Executing: fact_Tail() term_tail() 
+	Token: ) consumed
+Executing: fact_Tail() mult_op() 
+	Token: / consumed
+Executing: factor()
+	Token: 2 consumed
+Executing: fact_Tail() term_tail() stmt_list() stmt() 
+	Token: write consumed
+Executing: expr() term() factor()
+	Token: _A_5 consumed
+Executing: fact_Tail() term_tail() stmt_list() 
+	Token: $$ consumed
+--------------------------------
+Errors Generated: 0
+--------------------------------

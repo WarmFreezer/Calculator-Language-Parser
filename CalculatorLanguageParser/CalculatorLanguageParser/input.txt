@@ -1,0 +1,28 @@
+read	keyword
+A1	id
+read	keyword
+A2	id
+sum	id
+:=
+(
+A1	id
+-
+33	number
+)
++
+A2	id
+*
+5.5	number
+write	keyword
+sum	id
+write	keyword
+(
+A1	id
++
+A2	id
+)
+/
+2	number
+write	keyword
+_A_5	id
+$$
